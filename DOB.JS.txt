@@ -1,0 +1,4 @@
+var start= moment('12/03/1998').format("DD/MM/YYYY);
+var end = moment().format("DD/MM/YYYY);
+var days = moment.duration(end.diff(start)).days();
+console.log(days)

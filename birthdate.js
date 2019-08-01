@@ -1,0 +1,11 @@
+var moment = require('moment');
+var a= moment("12/03/1998" , "DD/MM/YYYY");
+var b = moment("01/08/2019" , "DD/MM/YYYY");
+var days = b.diff(a ,'days');
+var weeks = b.diff(a,'weeks');
+var months = b.diff(a,'months');
+var years= b.diff(a,'years');
+console.log("Total no. of days " + days + " pass since " + moment(a,"DD/MM/YYYY").format("DD/MMM/YYYY"));
+console.log( "Total no. of weeks "+ weeks + " pass since " + moment(a,"DD/MM/YYYY").format("DD/MMM/YYYY"));
+console.log("Total no. of months "+ months + " pass since " + moment(a,"DD/MM/YYYY").format("DD/MMM/YYYY"));
+console.log("Total no. of years "+ years + " pass since " + moment(a,"DD/MM/YYYY").format("DD/MMM/YYYY"));
